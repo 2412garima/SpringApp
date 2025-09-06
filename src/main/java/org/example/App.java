@@ -13,8 +13,11 @@ public class App
     {
         ApplicationContext context=new ClassPathXmlApplicationContext("config.xml");
         //if there is only one bean of type Developer in config.xml
-        Developer dev=context.getBean(Developer.class);
+//        Developer dev=context.getBean(Developer.class);
 
+        //We can use bean name/id if multiple beans of same type
+        Developer dev= (Developer) context.getBean("dev");
+        System.out.println(dev.getAge());
         dev.build();
     }
 }

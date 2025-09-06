@@ -5,8 +5,9 @@ public class Developer {
     private int age;
     private Laptop laptop;
 
-    public Developer(int age) {
+    public Developer(int age, Laptop laptop) {
         this.age = age;
+        this.laptop=laptop;
     }
 
     public Developer() {

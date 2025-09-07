@@ -5,7 +5,7 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="dev" class="org.example.Developer" autowire="byName">
+    <bean id="dev" class="org.example.Developer" autowire="byType">
         <property name="age" value="12"/>
 <!--        <property name="com" ref="lap1"/>-->
     </bean>
@@ -16,6 +16,6 @@
     </bean>
 
     <bean id="com" class="org.example.Laptop"/>
-    <bean id="desk1" class="org.example.Desktop"/>
+    <bean id="desk1" class="org.example.Desktop" primary="true"/>
 
 </beans>

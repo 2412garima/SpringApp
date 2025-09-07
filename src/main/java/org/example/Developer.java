@@ -3,15 +3,8 @@ package org.example;
 public class Developer {
 
     private int age;
-    private Laptop laptop;
+    private Computer com;
 
-    public Developer(int age, Laptop laptop) {
-        this.age = age;
-        this.laptop=laptop;
-    }
-
-    public Developer() {
-    }
 
     public int getAge() {
         return age;
@@ -21,17 +14,17 @@ public class Developer {
         this.age = age;
     }
 
-    public Laptop getLaptop() {
-        return laptop;
+    public Computer getCom() {
+        return com;
     }
 
-    public void setLaptop(Laptop laptop) {
-        this.laptop = laptop;
+    public void setCom(Computer com) {
+        this.com = com;
     }
 
     public void build()
     {
-        laptop.compile();
+        com.compile();
         System.out.println("Building a java project");
     }
 }

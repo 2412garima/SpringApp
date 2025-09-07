@@ -7,14 +7,15 @@
     <!-- bean definitions here -->
     <bean id="dev" class="org.example.Developer">
         <property name="age" value="12"/>
-        <property name="laptop" ref="lap1"/>
+        <property name="com" ref="lap1"/>
     </bean>
     <bean id="dev1" class="org.example.Developer">
 <!--        <constructor-arg name="age" value="14"/>-->
-        <constructor-arg index="0" value="17"/>
-        <constructor-arg index="1" ref="lap1"/>
+<!--        <constructor-arg index="0" value="17"/>-->
+<!--        <constructor-arg index="1" ref="lap1"/>-->
     </bean>
 
     <bean id="lap1" class="org.example.Laptop"/>
+    <bean id="desk1" class="org.example.Desktop"/>
 
 </beans>

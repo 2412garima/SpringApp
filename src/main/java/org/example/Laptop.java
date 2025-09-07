@@ -1,11 +1,11 @@
 package org.example;
 
-public class Laptop {
+public class Laptop implements Computer{
 
     public void compile()
     {
 
-        System.out.println("Few errors found using laptop");
+        System.out.println("Compiling in laptop");
     }
 }
 

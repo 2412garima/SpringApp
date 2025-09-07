@@ -16,7 +16,7 @@ public class App
 //        Developer dev=context.getBean(Developer.class);
 
         //We can use bean name/id if multiple beans of same type
-        Developer dev= (Developer) context.getBean("dev1");
+        Developer dev= (Developer) context.getBean("dev");
         System.out.println(dev.getAge());
         dev.build();
     }
